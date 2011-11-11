@@ -1,24 +1,8 @@
 <html>
-<div id="flogrthumb_container</html>{{{1}}}<html>" class="flogrthumb"></div>
+<div id="flogrthumb_container_</html>{{anchorencode:{{{2}}}}}<html>" class="flogrthumb" style="display:none"></div>
 <script type="text/javascript">
 	jQuery(document).ready(function() {
-		var flogrthumbId = '</html>{{{1}}}<html>'; // in var for readability
-		var flogrthumbDomId = '#flogrthumb_container' + flogrthumbId;
-		jQuery(flogrthumbDomId).addClass('initialized loading');
-		var amp = String.fromCharCode(38); // wiki escapes ampersands
-		var url = '/extensions/flogr/?type=sets' + amp + 'setId=' + flogrthumbId;
-		jQuery.get(url, function(data) {
-			var title = data.match(/.*<span id=['"]page_title['"]>([\s\S]+?)<\/span>.*/i)[1];
-			var pictures = data.match(/.*<div id=['"]thumbnail_container['"]>([\s\S]+?)<\/div>.*/i)[1];
-			var count = pictures.match(/<img /ig).length;
-			jQuery(flogrthumbDomId).removeClass('loading').html(
-				'<div class="thumbs">' + pictures + '</div>' +
-				'<strong>' + title + '</strong>' +
-				'(' + count  + ' Fotos)'
-			);
-			jQuery(flogrthumbDomId + ' a').attr('rel', 'lightbox[' + flogrthumbId + ']');
-			jQuery(flogrthumbDomId + ' a').lightBox(lightboxOptions);
-		});
+		flogrThumbs('flogrthumb_container_</html>{{anchorencode:{{{2}}}}}<html>', '</html>{{{1}}}<html>', '</html>{{{2}}}<html>');
 	});
 </script>
 </html>

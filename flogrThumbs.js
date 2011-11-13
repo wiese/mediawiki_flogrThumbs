@@ -1,4 +1,17 @@
-
+/**
+ * flogrThumbs - flogr's thumbnails and browseable lightbox inside your website
+ *
+ * @requires jQuery
+ *
+ * @example flogrThumbs('my_picture_set', 'set', '1234567890');
+ * @example flogrThumbs('all_my_cat_pics', 'tag', 'cat');
+ *
+ * @param string domId The id of the dom element (the container)
+ * @param string type  The type of collection to show (e.g. "set", "tag")
+ * @param string value A unique identifyer of the collection (set id, or a tag)
+ *
+ * @return void
+ */
 function flogrThumbs(domId, type, value) {
 	var id = '#' + domId;	// jQuery syntax
 	var queryData = {	// build all, pick the right one

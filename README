@@ -8,6 +8,7 @@ Inside your existing mediawiki installation it allows you to...
 * display set/tag title and the amount of images inside
 * open big version of the images in a lightbox overlay on click
 * browse through the images inside the open overlay
+* have multiple independent instances on one page
 
 Requirements:
 

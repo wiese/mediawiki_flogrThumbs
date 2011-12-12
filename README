@@ -1,13 +1,13 @@
-Template_FlogrThumbs - A mash-up of "flogr" and "LightBox 2"
+FlogrThumbs - A mash-up of "flogr" and "LightBox 2"
 
 What it does:
 
 Inside your existing mediawiki installation it allows you to...
 
-* show a list of thumbnails of a given flickr set
-* display set title and the amount of pictures
-* open big version of the pictures in an overlay on click
-* browse through the set inside the open overlay
+* show a list of thumbnails of a given flickr set/tag
+* display set/tag title and the amount of images inside
+* open big version of the images in a lightbox overlay on click
+* browse through the images inside the open overlay
 
 Requirements:
 
@@ -16,17 +16,16 @@ Requirements:
 
 Setup:
 
-* create "FlogrThumbs" template (copy content of the Template_FlogrThumbs file into /wiki/Template:FlogrThumbs?action=edit of your wiki)
-* style information (copy from FlogrThumbs.css into your wiki's skin's CSS file)
+* create "FlogrThumbs" template (copy content of the Template_FlogrThumbs file into /wiki/Template:FlogrThumbs of your wiki)
+* style information (copy from FlogrThumbs.css into your wiki's skin's CSS file, or additionally include)
 
 Usage:
 
 To embed the list of thumbnails inside an article, put the template tag
-  {{FlogrThumbs|<flickr_set_id>}}
+  {{FlogrThumbs|set|<flickr_set_id>}}
 at the desired position inside the wiki syntax.
 
 
-Original Projects:
+Kudos / Original Projects:
 * http://code.google.com/p/flogr/
 * http://lokeshdhakar.com/projects/lightbox2/
-

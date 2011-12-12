@@ -7,7 +7,7 @@
  * @example flogrThumbs('all_my_cat_pics', 'tag', 'kitten');
  *
  * @param string domId The id of the dom element (the container)
- * @param string type  The type of collection to show (e.g. "set", "tag")
+ * @param string type  The type of collection to show ("set" or "tag")
  * @param string value A unique identifyer of the collection (set id, or a tag)
  *
  * @return void

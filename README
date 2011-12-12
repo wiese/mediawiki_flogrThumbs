@@ -22,7 +22,7 @@ Setup:
 
 Usage:
 
-To embed the list of thumbnails inside an article, put the template tag
+To embed the list of thumbnails inside an article, include the template, e.g.
   {{FlogrThumbs|set|<flickr_set_id>}}
 at the desired position inside the wiki syntax.
 

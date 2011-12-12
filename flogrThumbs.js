@@ -4,7 +4,7 @@
  * @requires jQuery
  *
  * @example flogrThumbs('my_picture_set', 'set', '1234567890');
- * @example flogrThumbs('all_my_cat_pics', 'tag', 'cat');
+ * @example flogrThumbs('all_my_cat_pics', 'tag', 'kitten');
  *
  * @param string domId The id of the dom element (the container)
  * @param string type  The type of collection to show (e.g. "set", "tag")

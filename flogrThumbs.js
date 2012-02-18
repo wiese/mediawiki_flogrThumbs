@@ -33,3 +33,12 @@ function flogrThumbs(domId, type, value) {
 		jQuery(id + ' a').lightBox(lightboxOptions);
 	});
 }
+
+jQuery(document).ready(function() {
+	if (typeof flogrThumbsTasks === 'undefined') {
+		return false;
+	}
+	jQuery.each(flogrThumbsTasks, function() {
+		flogrThumbs(this.domId, this.type, this.value);
+	});
+});

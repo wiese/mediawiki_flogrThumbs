@@ -23,7 +23,7 @@ h2. Setup:
 h2. Usage:
 
 To embed the list of thumbnails inside an article, include the template, e.g.
-  {{FlogrThumbs|set|<flickr_set_id>}}
+  {{FlogrThumbs|set|your_flickr_set_id}}
 at the desired position inside the wiki syntax.
 
 

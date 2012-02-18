@@ -1,6 +1,6 @@
-FlogrThumbs - A mash-up of "flogr" and "LightBox 2"
+h1. FlogrThumbs - A mash-up of "flogr" and "LightBox 2"
 
-What it does:
+h2. What it does:
 
 Inside your existing mediawiki installation it allows you to...
 
@@ -10,23 +10,23 @@ Inside your existing mediawiki installation it allows you to...
 * browse through the images inside the open overlay
 * have multiple independent instances on one page
 
-Requirements:
+h2. Requirements:
 
-* installed flogr extension
+* installed flogr extension (assumed at /extensions/flogr)
 * installed lightbox extension
 
-Setup:
+h2. Setup:
 
 * create "FlogrThumbs" template (copy content of the Template_FlogrThumbs file into /wiki/Template:FlogrThumbs of your wiki)
 * style information (copy from FlogrThumbs.css into your wiki's skin's CSS file, or additionally include)
 
-Usage:
+h2. Usage:
 
 To embed the list of thumbnails inside an article, include the template, e.g.
   {{FlogrThumbs|set|<flickr_set_id>}}
 at the desired position inside the wiki syntax.
 
 
-Kudos / Original Projects:
+h2. Kudos / Original Projects:
 * http://code.google.com/p/flogr/
 * http://lokeshdhakar.com/projects/lightbox2/

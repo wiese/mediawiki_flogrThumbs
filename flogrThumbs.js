@@ -26,8 +26,7 @@ function flogrThumbs(domId, type, value) {
 		var count = pictures.match(/<img /ig).length;
 		jQuery(id).removeClass('loading').html(
 			'<div class="thumbs">' + pictures + '</div>' +
-				'<strong>' + title + '</strong>' +
-				'(' + count  + ' Fotos)'
+				'<strong>' + title + '</strong> (' + count  + ')'
 		);
 		jQuery(id + ' a').attr('rel', 'lightbox[' + collection + ']');
 		jQuery(id + ' a').lightBox(lightboxOptions);

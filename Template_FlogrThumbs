@@ -1,11 +1,2 @@
-<html>
-<div id="flogrthumb_container_</html>{{anchorencode:{{{2}}}}}<html>" class="flogrthumb" style="display:none"></div>
-<script type="text/javascript">
-	if (typeof flogrThumbsTasks === 'undefined') { flogrThumbsTasks = new Array(); }
-	flogrThumbsTasks.push({
-		domId: 'flogrthumb_container_</html>{{anchorencode:{{{2}}}}}<html>', 
-		type: '</html>{{{1}}}<html>',
-		value: '</html>{{{2}}}<html>'
-	});
-</script>
-</html>
+<div class="flogrthumbs" style="display:none" data-flogr-type="{{{1}}}" data-flogr-value="{{{2}}}"></div>
+

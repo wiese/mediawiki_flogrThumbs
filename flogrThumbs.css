@@ -1,21 +1,22 @@
-.flogrthumb.initialized {
+.flogrthumbs.initialized {
     height: 95px;
 }
 
-.flogrthumb.initialized .thumbs {
+.flogrthumbs.initialized .thumbs {
     height: 78px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-.flogrthumb.loading {
+.flogrthumbs.loading {
     background: transparent url(images/loading.gif) no-repeat scroll center center;
 }
 
-.flogrthumb a {
+.flogrthumbs a {
     background: none !important;
     padding-right: 0 !important;
     margin: 3px 3px 0 0;
     display: inline-block;
     width: 78px;
 }
+

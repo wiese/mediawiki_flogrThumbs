@@ -26,10 +26,28 @@ function flogrThumbs(domId, type, value) {
 		var count = pictures.match(/<img /ig).length;
 		jQuery(id).removeClass('loading').html(
 			'<div class="thumbs">' + pictures + '</div>' +
-				'<strong>' + title + '</strong> (' + count  + ')'
+				'<strong>' + title + '</strong>' +
+				'(' + count  + ' Fotos)'
 		);
 		jQuery(id + ' a').attr('rel', 'lightbox[' + collection + ']');
 		jQuery(id + ' a').lightBox(lightboxOptions);
+
+		// find flickr hosted (teaser) images present in page body (too easy?)
+		// issue: flickr using different domains (static.flickr.com / staticflickr.com)
+		var picFromFlickrRule = 'img[src*="flickr\\.com\\/"][src$="\\.jpg"]'
+		jQuery('#bodyContent p ' + picFromFlickrRule).each(function() {
+			var insiteThumb = jQuery(this);
+			var picId = insiteThumb.attr('src').match(/\/(\d{10})_.+?\.jpg$/i)[1];
+			if (picId != parseInt(picId)) {
+				return true;	// give up on this, but go on to next item;
+			}
+			// find respective thumb in just received list of thumbs
+			jQuery(id + ' ' + picFromFlickrRule + '[src*="/' + picId + '_"]').each(function() {
+				var link = jQuery(this).parent('a').get(0);	// get its link
+				var newLink = jQuery(link).clone(true).empty().get(0);
+				insiteThumb.wrap(newLink);	// make thumb in body have same link
+			});
+		});
 	});
 }
 
